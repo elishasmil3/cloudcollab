@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoHostZ</title>
-    <link rel="shortcut icon" href="https://gohostz.com/images/logo.png" type="image/x-icon">
+    <title>CloudCollab</title>
+    <link rel="shortcut icon" href="https://cloudcollab.com/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/head.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/sections.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="topNav wrap">
+    <div class="topNav wrap" id="default">
         <div class="topNavCon wrapCon">
             <div class="topLeft">Join our Discord to create support ticket →</div>
             <div class="topRight">
@@ -28,19 +28,19 @@
     </div>
     <div class="nav wrap">
         <div class="navCon wrapCon">
-            <div class="navLeft">GoHostZ</div>
+            <div class="navLeft">CloudCollab</div>
             <div class="navRight">
-                <li>Home</li>
-                <li>Pricings</li>
-                <li>Contact</li>
-                <li>Discord</li>
-                <li>Panel</li>
+                <li><a href="#default">Home</a></li>
+                <li><a href="#pricings">Pricings</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
             </div>
         </div>
     </div>
     <div class="mobNav">
         <div class="mobNavHead">
-            <h1>GoHostZ</h1>
+            <h1>CloudCollab</h1>
             <divclass="hamburger" onClick="mobNavToggle()">
                 <div class="hamLines"></div>
                 <div class="hamLines"></div>
@@ -48,11 +48,11 @@
                 </divclass=>
         </div>
         <div id="mobNavLinks" class="mobNavLinks">
-            <li>Home</li>
-            <li>Pricings</li>
-            <li>Contact</li>
-            <li>Discord</li>
-            <li>Panel</li>
+            <li><a href="#default">Home</a></li>
+            <li><a href="#pricings">Pricings</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Discord</a></li>
+            <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
         </div>
     </div>
     <div class="header wrap">
@@ -79,7 +79,7 @@
                 <h1>POWERED BY</h1>
             </div>
             <div class="sectionContent poweredBrands">
-                
+
                 <img src="./assets/imgs/brands/amd.png" alt="AMD" height="150px">
                 <img src="./assets/imgs/brands/do.png" alt="DO" height="200px">
                 <img src="./assets/imgs/brands/aws.png" alt="AWS" height="110px">
@@ -89,26 +89,17 @@
         </div>
     </div>
 
-    <div class="section wrapper">
+    <div class="section wrapper" id="pricings">
         <div class="sectionCon wrapCon pricings">
             <div class="sectionHead">
                 <h2>PLANS</h2>
                 <h1>PRICINGS</h1>
             </div>
             <div class="sectionContent">
-                <div class="toggleBtns">
-                    <button class="toggleBtn active" data-option="web" onclick="togglePricing('web')"
-                        style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; padding-left: 20px;">Web</button>
-                    <button class="toggleBtn" data-option="vps" onclick="togglePricing('vps')">VPS</button>
-                    <button class="toggleBtn" data-option="discord" onclick="togglePricing('discord')"
-                        style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; padding-right: 20px;">Discord
-                        Bot</button>
-                </div>
-
                 <div class="pricingListCon">
-                    <div id="webHosting" class="pricingList">
-                        <div class="pricingCard">
-                            <div class="pricingTitle">
+                    <div class="pricingList">
+                        <div class="pricingCard PCMin c1">
+                            <div class="pricingTitle PTMin">
                                 <h2>STARTER</h2>
                                 <h1>Rs 99/-</h1>
                                 <h3>Renews @ Rs 149/-</h3>
@@ -116,14 +107,14 @@
                             <div class="pricingInfo">
                                 <div>
                                     <div class="pricingInfoHead"></div>
-                                    <div class="pricingInfoList">
+                                    <div class="pricingInfoList" style="display: none;">
                                         <li>
                                             <div class="pricingInfoTick"></div>
-                                            <div class="pricingInfoDetail"></div>
+                                            <div class="pricingInfoDetail">A</div>
                                         </li>
                                         <li>
                                             <div class="pricingInfoTick"></div>
-                                            <div class="pricingInfoDetail"></div>
+                                            <div class="pricingInfoDetail">A</div>
                                         </li>
                                     </div>
                                 </div>
@@ -131,8 +122,8 @@
                             <div class="pricingButton">PURCHASE!</div>
                             <div class="pricingMore">MORE DETAILS <i class="fa-solid fa-chevron-down"></i></div>
                         </div>
-                        <div class="pricingCard">
-                            <div class="pricingTitle">
+                        <div class="pricingCard PCMin c2">
+                            <div class="pricingTitle PTMin">
                                 <h2>PREMIUM</h2>
                                 <h1>Rs 249/-</h1>
                                 <h3>Renews @ Rs 349/-</h3>
@@ -155,8 +146,8 @@
                             <div class="pricingButton">PURCHASE!</div>
                             <div class="pricingMore">MORE DETAILS <i class="fa-solid fa-chevron-down"></i></div>
                         </div>
-                        <div class="pricingCard">
-                            <div class="pricingTitle">
+                        <div class="pricingCard c3 PCMaj">
+                            <div class="pricingTitle PTMaj">
                                 <h2>BUSINESS</h2>
                                 <h1>Rs 99/-</h1>
                                 <h3>Renews @ Rs 149/-</h3>
@@ -180,46 +171,44 @@
                             <div class="pricingMore">MORE DETAILS <i class="fa-solid fa-chevron-down"></i></div>
                         </div>
                     </div>
-
-                    <div id="vpsHosting" class="pricingList" style="display: none;">
-                        <div class="pricingCard">
-                            <div class="pricingTitle">
-                                <h2></h2>
-                                <h1></h1>
-                                <h3></h3>
-                            </div>
-                            <div class="pricingInfo">
-                                <div>
-                                    <div class="pricingInfoHead"></div>
-                                    <div class="pricingInfoList">
-                                        <li>
-                                            <div class="pricingInfoTick"></div>
-                                            <div class="pricingInfoDetail"></div>
-                                        </li>
-                                        <li>
-                                            <div class="pricingInfoTick"></div>
-                                            <div class="pricingInfoDetail"></div>
-                                        </li>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pricingButton"></div>
-                            <div class="pricingMore">MORE DETAILS <i class="fa-solid fa-chevron-down"></i></div>
-                        </div>
-                    </div>
-
-                    <div id="discordHosting" class="pricingList" style="display: none;">
-                        <div class="card">
-                        </div>
-                    </div>
                 </div>
             </div>
 
         </div>
     </div>
     </div>
-    <!-- <div class="section wrapper">
-        <div class="sectionCon wrapperCon">
+    <div class="section wrap">
+        <div class="sectionCon wrapCon">
+            <div class="sectionHead">
+                <h2>WHO ARE WE</h2>
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="sectionContent" style="max-width: 90%;">
+                <p class="aboutP">We are a small team of open minded friendly individuals
+                    who have been in the proxy/IP space for 3+
+                    years. After working with proxy sourcing companies and running passive income communities related to
+                    this industry we have decided to offer our own set of solutions to businesses out there. We have
+                    been where you are. We are ready to help you with everything to the best of our ability.
+                    Our mission at CloudCollab is to provide the best quality with full transparency on our abilities.
+                    Our services will always maintain the highest quality. Talk to us about your use-cases and we will
+                    tailor the proxies to your needs or source them for you.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section wrap" id="contact">
+        <div class="sectionCon wrapCon">
+            <div class="sectionHead">
+                <h2>GET IN TOUCH</h2>
+                <h1>CONTACT</h1>
+            </div>
+            <div class="sectionContent">
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section wrap">
+        <div class="sectionCon wrapCon">
             <div class="sectionHead">
                 <h2></h2>
                 <h1></h1>
@@ -230,7 +219,16 @@
         </div>
     </div> -->
     <script src="./assets/js/mobNav.js"></script>
+    <script>// Get the toggle button and the component to show/hide
+        const toggleButton = document.querySelector('.pricingMore');
+        const pricingInfoList = document.querySelector('.pricingInfoList');
 
+        // Add event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the visibility of the component
+            pricingInfoList.style.display = pricingInfoList.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>
     <script>
         function togglePricing(option) {
             const pricingLists = document.getElementsByClassName('pricingList');
