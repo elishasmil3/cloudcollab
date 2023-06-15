@@ -8,47 +8,18 @@
         height: 600px;
         width: auto;
     }
-}
 
-@media only screen and (max-width:1223px) {
-    .pricingList {
-        transform: scale(0.8);
-    }
-
-    .pricings .sectionContent {
-        transform: translateY(200px);
+    .sectionHead {
+        margin-bottom: 40px;
     }
 }
 
-@media only screen and (max-width:950px) {
-    .pricingList {
-        transform: scale(0.7);
-    }
-
-    .pricings .sectionContent {
-        transform: translateY(170px);
+@media only screen and (max-width:1200px) {
+    .contactLeft img {
+        height: 300px;
     }
 }
 
-@media only screen and (max-width:800px) {
-    .pricingList {
-        flex-wrap: wrap;
-        gap: 30px;
-        transform: scale(0.9);
-    }
-
-    .pricings .sectionContent {
-        transform: translateY(0px);
-    }
-
-    .pricingCard {
-        position: unset;
-        transform: translateX(0px) !important;
-        height: max-content;
-        border: 1px solid #d5dfff;
-    }
-
-}
 
 @media only screen and (max-width:728px) {
     .wrapCon {
@@ -96,13 +67,13 @@
         padding-top: 10px;
     }
 
-    .sectionHead h2 {
+    /* .sectionHead h2 {
         font-size: 20px;
     }
 
     .sectionHead h1 {
         font-size: 30px;
-    }
+    } */
 
     .sectionHead {
         margin-bottom: 30px;
@@ -111,6 +82,16 @@
     .poweredBrands {
         transform: scale(0.8);
     }
+
+
+    .sectionCon {
+        transform: scale(0.9);
+    }
+
+    .sectionCon .sectionHead {
+        transform: scale(0.8);
+    }
+
 }
 
 @media only screen and (max-width:640px) {
@@ -132,32 +113,33 @@
     }
 
 
+
     .poweredBrands {
         gap: 50px;
-    }
-
-    .sectionHead {
-        margin-bottom: 20px !important;
     }
 
     .poweredBrands {
         transform: translateY(30px);
     }
 
-    .pricingCard {
-        transform: scale(0.8);
-        min-width: calc(100% - 20px);
-    }
-
-    .pricingButton {
-        font-size: 25px;
-    }
-
-    .pricingMore {
-        margin-top: 20px;
-    }
-
     .aboutP {
         font-size: 20px !important;
     }
+
+    .bestSearchBar {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contactConnecting span {
+        display: block;
+    }
+
+    .trustpilot {
+        width: 100%!important;
+        margin-top: 100px;
+    }
+    /* .contactForm{
+        width: 900px;
+    } */
 }

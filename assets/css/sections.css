@@ -31,10 +31,6 @@
     justify-content: center;
 }
 
-.pricings .sectionHead {
-    margin-bottom: 40px;
-}
-
 
 .toggleBtns {
     display: flex;
@@ -57,75 +53,171 @@
     color: white;
 }
 
-.pricings .sectionContent {
-    min-height: 450px;
-    transform: translateY(240px);
-    transition: 0.5s;
-}
-
-.pricingList {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pricingCard {
-    position: absolute;
-    min-width: 300px;
-    padding: 30px;
-    background: #fff;
-    border: 1px solid #d5dfff;
-    border-radius: 1px;
-    font-family: var(--secondary-font);
-}
-
-.pricingList .c1 {
-    transform: translateX(-380px);
-}
-
-.pricingList .c2 {
-    transform: translateX(380px);
-}
-
-.PCMaj {
-    min-width: 350px;
-    height: 400px;
-    border: 5px solid #0069ff;
-}
-
-.pricingTitle h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-
-.pricingTitle h1 {
-    font-size: 40px;
-    margin-bottom: 5px;
-}
-
-.pricingTitle h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.pricingButton {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    padding: 10px;
-    background: var(--secondary-color);
-    color: white;
-}
-
-.pricingMore {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 30px;
-}
 
 .aboutP {
     text-align: center;
+    font-size: 30px;
+}
+
+
+
+.contactContent {
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm {
+    background: #20303b;
+    border-radius: 20px;
+    color: white;
+    width: 800px;
+    font-family: var(--tertiary-font);
+    box-shadow: 0px 3px 65px rgba(0, 0, 0, 0.25);
+}
+
+.contactForm hr {
+    outline: none;
+    height: 1px;
+    background: #5D6C74;
+    border: none;
+}
+
+.terminalNav {
+    display: flex;
+    padding: 10px;
+}
+
+.terminalNav li {
+    height: 18px;
+    width: 18px;
+    margin: 0 5px;
+    border-radius: 100%;
+}
+
+.contactConnecting {
+    padding: 20px 30px;
+    font-size: 25px;
+}
+
+.contactFormInputs {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contactFormInputs label {
+    /* margin-bottom: 20px; */
+}
+
+.contactFormInputs input,
+.contactFormInputs textarea {
+    background-color: var(--secondColor);
+    font-family: var(--tertiary-font);
+    width: calc(100% - 40px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    padding-right: 18px;
+    padding-left: 18px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contactFormInputs input:hover,
+.contactFormInputs textarea:hover {
+    border: 1px solid rgba(249, 249, 249, 0.656);
+    transition: 0.5s;
+}
+
+.contactFormInputs textarea {
+    padding-top: 10px;
+    resize: none;
+    height: 100px;
+}
+
+.contactFormInputs input:focus-visible,
+.contactFormInputs textarea:focus-visible {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border: 1px solid rgba(249, 249, 249, 0.656);
+
+    transition: 0.5s;
+}
+
+.contactFormSubmit {
+    padding: 20px;
+    text-align: center;
+}
+
+.contactFormSubmit button {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.contactFormSubmit button:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#searchBar {
+    background: var(--secondary-color) url(https://www.pngall.com/wp-content/uploads/2017/11/Particles-PNG-Picture.png);
+    background-position-x: -61px;
+    background-position-y: -107px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bestSearchBar {
+    width: 70%;
+    margin: auto;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.bestSearchBar:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.testimonies {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.testimony img {
+    height: 100px;
+    border-radius: 100%;
+}
+
+.testimony span {
+    margin-top: 20px;
+    width: 70%;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-style: italic;
+}
+
+.testimony h3 {
     font-size: 30px;
 }

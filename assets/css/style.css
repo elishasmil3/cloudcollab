@@ -8,7 +8,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 :root {
     --primary-color: rgb(59, 61, 67);
@@ -31,6 +31,10 @@ body {
 a {
     text-decoration: none;
     color: unset;
+}
+
+a.linkA {
+    color: var(--secondary-color);
 }
 
 li {
@@ -78,4 +82,24 @@ button {
     display: flex;
     align-items: center;
     padding: 0 70px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
