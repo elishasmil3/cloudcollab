@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    /* transition: 0.5s; */
+}
+
+:root {
+    --primary-color: rgb(59, 61, 67);
+    --secondary-color: #0069ff;
+    --tertiary-color: rgb(3, 27, 78);
+    --light-color: rgb(202, 219, 255);
+    --grey-color: rgb(172, 172, 172);
+    --darkGrey-color: rgb(80, 80, 80);
+    --primary-font: "Inter Tight", sans-serif;
+    --secondary-font: "Epilogue", sans-serif;
+    --tertiary-font: "JetBrains Mono", monospace;
+}
+
+body {
+    background: #f9fafe;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background: none;
+    padding: 10px 20px;
+    border: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+}
+
+.primaryBtn {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: white;
+}
+
+.primaryBtn:hover {
+    /* background: var(--light-color); */
+    background: var(--tertiary-color);
+    /* color: black; */
+}
+
+.secondaryBtn {
+    border: 1px solid var(--secondary-color);
+}
+
+.secondaryBtn:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.wrap {
+    width: 100%;
+    display: block;
+}
+
+.wrapCon {
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+}
