@@ -27,51 +27,55 @@
             </div>
         </div>
     </div>
-    <div class="nav wrap">
-        <div class="navCon wrapCon">
-            <div class="navLeft">CloudCollab</div>
-            <div class="navRight">
+
+    <div class="head">
+        <div class="nav wrap">
+            <div class="navCon wrapCon">
+                <div class="navLeft">CloudCollab</div>
+                <div class="navRight">
+                    <li><a href="#default">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Discord</a></li>
+                    <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="mobNav">
+            <div class="mobNavHead">
+                <h1>CloudCollab</h1>
+                <divclass="hamburger" onClick="mobNavToggle()">
+                    <div class="hamLines"></div>
+                    <div class="hamLines"></div>
+                    <div class="hamLines"></div>
+                    </divclass=>
+            </div>
+            <div id="mobNavLinks" class="mobNavLinks">
                 <li><a href="#default">Home</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="">Discord</a></li>
                 <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
             </div>
         </div>
-    </div>
-    <div class="mobNav">
-        <div class="mobNavHead">
-            <h1>CloudCollab</h1>
-            <divclass="hamburger" onClick="mobNavToggle()">
-                <div class="hamLines"></div>
-                <div class="hamLines"></div>
-                <div class="hamLines"></div>
-                </divclass=>
-        </div>
-        <div id="mobNavLinks" class="mobNavLinks">
-            <li><a href="#default">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Discord</a></li>
-            <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
-        </div>
-    </div>
-    <div class="header wrap">
-        <div class="headerCon wrapCon">
-            <div class="headLeft">
-                <h1>Share For Real</h1>
-                <h2>With CloudCollab, you have the power to make a difference by sharing your internet bandwidth with
-                    others. Our innovative platform allows you to contribute your unused or excess bandwidth and help
-                    bridge the digital divide.</h2>
-                <div style="padding-top: 10px;">
-                    <button class="primaryBtn">PURCHASE</button>
-                    <button class="secondaryBtn" style="margin-left: 10px;">DISCORD</button>
+        <div class="header wrap">
+            <div class="headerCon wrapCon">
+                <div class="headLeft">
+                    <h1>Share For Real</h1>
+                    <h2>With CloudCollab, you have the power to make a difference by sharing your internet bandwidth
+                        with
+                        others. Our innovative platform allows you to contribute your unused or excess bandwidth and
+                        help
+                        bridge the digital divide.</h2>
+                    <div style="padding-top: 10px;">
+                        <button class="primaryBtn">PURCHASE</button>
+                        <button class="secondaryBtn" style="margin-left: 10px;">DISCORD</button>
+                    </div>
+                </div>
+                <div class="headRight">
+                    <img src="./assets/imgs/server-isometrics/3.png" alt="ISOMETRIC">
                 </div>
             </div>
-            <div class="headRight">
-                <img src="./assets/imgs/server-isometrics/3.png" alt="ISOMETRIC">
-            </div>
         </div>
     </div>
-
     <div class="section wrap">
         <div class="sectionCon wrapCon">
             <div class="sectionHead">
@@ -82,8 +86,7 @@
 
                 <img src="https://images-ext-2.discordapp.net/external/jefq50uUDPOHjD77oRV-bHOjLsAnJ1aj4XJy9G7x-tU/%3Fsize%3D1024/https/media.discordapp.net/stickers/1086648789043007499.webp?width=320&height=320"
                     alt="AMD" height="200px">
-                <img src="https://discord.com/channels/@me/1118612050596343808/1118974781610524762" alt="DO"
-                    height="200px">
+               
                 <img src="./assets/imgs/brands/aws.png" alt="AWS" height="110px">
                 <img src="./assets/imgs/brands/linode.png" alt="Linode" height="200px">
                 <!-- <img src="" alt="" height="200px"> -->
@@ -92,8 +95,8 @@
     </div>
 
     </div>
-    <div class="section wrap">
-        <div class="sectionCon wrapCon">
+    <div class="section wrap aboutWrap" >
+        <div class="sectionCon wrapCon" >
             <div class="sectionHead">
                 <h2>WHO ARE WE</h2>
                 <h1>ABOUT US</h1>
@@ -151,14 +154,14 @@
             </div>
         </div>
     </div>
-    <div class="section wrap" id="searchBar">
+    <!-- <div class="section wrap" id="searchBar">
         <div class="sectionCon wrapCon">
             <div class="sectionContent">
                 <div class="bestSearchBar"><i class="fa-thin fa-magnifying-glass"></i><span>BEST BANDWIDTH
                         SHARING...</span><i class="fa-thin fa-xmark"></i></div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="section wrap">
         <div class="sectionCon wrapCon testimoniesContent">
             <div class="sectionHead">
@@ -189,7 +192,7 @@
                             discount so I am happy about that.</span>
                         <h3>Neonsharp</h3>
                     </div>
-                <img src="https://jarvismod.com/wp-content/uploads/trustpilot-feedback.png" alt="trustpilot" style="width: 50%;
+                    <img src="https://jarvismod.com/wp-content/uploads/trustpilot-feedback.png" alt="trustpilot" style="width: 50%;
                 margin-top: 70px;" class="trustpilot">
                 </div>
             </div>
@@ -206,6 +209,10 @@
             </div>
         </div>
     </div> -->
+    <div class="footer">
+        <div class="footerLeft"></div>
+        <div class="footerRight"></div>
+    </div>
     <script src="./assets/js/mobNav.js"></script>
     <script>// Get the toggle button and the component to show/hide
         const toggleButton = document.querySelector('.pricingMore');
@@ -218,28 +225,14 @@
         });
     </script>
     <script>
-        function togglePricing(option) {
-            const pricingLists = document.getElementsByClassName('pricingList');
-            for (let i = 0; i < pricingLists.length; i++) {
-                pricingLists[i].style.display = 'none';
-            }
-
-            const toggleButtons = document.getElementsByClassName('toggleBtn');
-            for (let i = 0; i < toggleButtons.length; i++) {
-                toggleButtons[i].classList.remove('active');
-            }
-
-            const selectedButton = document.querySelector(`button[data-option="${option}"]`);
-            const selectedPricingList = document.getElementById(option + 'Hosting');
-
-            if (selectedButton && selectedPricingList) {
-                selectedButton.classList.add('active');
-                selectedPricingList.style.display = 'flex';
+    function fixNav() {
+            if (scrollY === 100) {
+                document.querySelector(".nav").style.display = "none";
             }
         }
-    </script>
 
-
+        // Call the fixNav function when the window is scrolled
+        window.addEventListener("scroll", fixNav);</script>
 </body>
 
 </html>

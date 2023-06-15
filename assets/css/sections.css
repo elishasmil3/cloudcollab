@@ -1,3 +1,13 @@
+.head {
+    background: linear-gradient(rgba(0, 0, 0, 0.545), rgba(0, 0, 0, 0.622)), url("https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3000&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+
 .section {
     padding: 70px 0;
 }
@@ -53,12 +63,16 @@
     color: white;
 }
 
+.aboutWrap {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 
 .aboutP {
     text-align: center;
     font-size: 30px;
 }
-
 
 
 .contactContent {
