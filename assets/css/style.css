@@ -49,6 +49,7 @@ button {
     font-family: var(--secondary-font);
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .primaryBtn {
