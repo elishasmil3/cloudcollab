@@ -70,7 +70,7 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    padding: 150px 0!important;
+    padding: 150px 0 !important;
 }
 
 .contactContent {
@@ -141,7 +141,7 @@
 .contactFormInputs input:hover,
 .contactFormInputs textarea:hover {
     border: 1px solid rgba(249, 249, 249, 0.656);
-    transition: 0.5s;
+
 }
 
 .contactFormInputs textarea {
@@ -156,7 +156,6 @@
     border: 1px solid rgba(255, 255, 255, .1);
     border: 1px solid rgba(249, 249, 249, 0.656);
 
-    transition: 0.5s;
 }
 
 .contactFormSubmit {
@@ -232,4 +231,52 @@
 
 .testimony h3 {
     font-size: 30px;
+}
+
+.faq {
+    background: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1024q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.faq .sectionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.question {
+    background: rgba(255, 255, 255, 0.703);
+    padding: 20px;
+    width: 100%;
+}
+
+.question span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question h1 {
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    font-size: 25px;
+}
+
+.question p {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.question hr {
+    margin: 8px 0;
+    display: none;
+}
+
+.question h2 {
+    font-weight: 300;
+    font-size: 18px;
+    display: none;
 }

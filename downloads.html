@@ -19,12 +19,11 @@
 <body>
     <div class="topNav wrap" id="default">
         <div class="topNavCon wrapCon">
-            <div class="topLeft">Join our Discord to create support ticket →</div>
+            <div class="topLeft"><a href="">Join our Discord to create support ticket →</a></div>
             <div class="topRight">
-                <li>Panel</li>
-                <li>Support</li>
-                <li>Blog</li>
-                <li>Pricings</li>
+                <li><a href="#contact">Support</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
             </div>
         </div>
     </div>
@@ -37,6 +36,7 @@
                     <li><a href="#default">Home</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="">Discord</a></li>
+                    <li><a href="./downloads.html">Downloads</a></li>
                     <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
                 </div>
             </div>
@@ -44,11 +44,12 @@
         <div class="mobNav">
             <div class="mobNavHead">
                 <h1>CloudCollab</h1>
-                <divclass="hamburger" onClick="mobNavToggle()">
-                    <div class="hamLines"></div>
-                    <div class="hamLines"></div>
-                    <div class="hamLines"></div>
-                    </divclass=>
+
+                <div class="hamburger" onClick="mobNavToggle()">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
             </div>
             <div id="mobNavLinks" class="mobNavLinks">
                 <li><a href="#default">Home</a></li>
@@ -60,10 +61,14 @@
         <div class="header wrap">
             <div class="headerCon wrapCon">
                 <div class="headLeft">
-                    <h1>Unlock the Power Now!</h1>
-                    <h2>With CloudCollab <br> Latest Version | 1.10.6</h2>
+                    <h1>Share For Real</h1>
+                    <h2>With CloudCollab, you have the power to make a difference by sharing your internet bandwidth
+                        with
+                        others. Our innovative platform allows you to contribute your unused or excess bandwidth and
+                        help
+                        bridge the digital divide.</h2>
                     <div style="padding-top: 10px;">
-                        <button class="primaryBtn">WINDOWS</button>
+                        <button class="primaryBtn">PURCHASE</button>
                         <button class="secondaryBtn" style="margin-left: 10px;">DISCORD</button>
                     </div>
                 </div>
@@ -72,7 +77,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -88,10 +92,10 @@
                     <h1>CloudCollab Supports -</h1>
                     <div style="margin-top: 40px;
                     margin-bottom: 80px!important;">
-                        <img src="https://images.ctfassets.net/upz5g6ntpb42/5DFGGARBM4WPQDd5sOuhx1/6d0d714935f866cd63071aac7887f970/app-store-badge.png?w=564&h=168&q=80&fm=webp"
+                        <!-- <img src="https://images.ctfassets.net/upz5g6ntpb42/5DFGGARBM4WPQDd5sOuhx1/6d0d714935f866cd63071aac7887f970/app-store-badge.png?w=564&h=168&q=80&fm=webp"
                             alt="apple" height="60px">
                         <img src="https://images.ctfassets.net/upz5g6ntpb42/3Q3EGmNAJ6HQvdIXxTFTj8/885824417f124ce4ebc0b7dd91f2626f/google-play-badge.png?w=564&h=168&q=80&fm=webp"
-                            alt="android" height="60px">
+                            alt="android" height="60px"> -->
                         <img src="https://1000marken.net/wp-content/uploads/2021/01/Microsoft-symbol.png" alt="windows"
                             height="60px">
                         <img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_linux-512.png"
@@ -112,10 +116,14 @@
                     </div>
                     <div class="downCard">
                         <h1>Linux (DEB/RPM)</h1>
-                        <h2>Debian and RPM based distributions including Debian, Ubuntu, CentOS, RHEL, Fedora, and others are supported via a script that adds the right repository and installs the package.Other Linux distributions may have their own packages. If not try building and installing from source.</h2>
+                        <h2>Debian and RPM based distributions including Debian, Ubuntu, CentOS, RHEL, Fedora, and
+                            others are supported via a script that adds the right repository and installs the
+                            package.Other Linux distributions may have their own packages. If not try building and
+                            installing from source.</h2>
                         <h3>
-                            If you’re willing to rely on SSL to authenticate the site, a one line install can be done with:
-                            <div class="codeArea">curl -s https://install.zerotier.com | sudo bash</div>
+                            If you’re willing to rely on SSL to authenticate the site, a one line install can be done
+                            with:
+                            <div class="codeArea">curl -s https://friendlyyouneedtostfu.com | sudo bash</div>
                         </h3>
                         <button class="primaryBtn">GitHub</button>
                     </div>
@@ -145,25 +153,19 @@
         <div class="footerRight"></div>
     </div>
     <script src="./assets/js/mobNav.js"></script>
-    <script>// Get the toggle button and the component to show/hide
-        const toggleButton = document.querySelector('.pricingMore');
-        const pricingInfoList = document.querySelector('.pricingInfoList');
 
-        // Add event listener to the toggle button
-        toggleButton.addEventListener('click', () => {
-            // Toggle the visibility of the component
-            pricingInfoList.style.display = pricingInfoList.style.display === 'none' ? 'flex' : 'none';
-        });
-    </script>
     <script>
         function fixNav() {
-            if (scrollY === 100) {
-                document.querySelector(".nav").style.display = "none";
+            if (scrollY >= 600) {
+                document.querySelector(".nav").classList.add("navScroll");
+            } else {
+                document.querySelector(".nav").classList.remove("navScroll");
             }
         }
 
         // Call the fixNav function when the window is scrolled
-        window.addEventListener("scroll", fixNav);</script>
+        window.addEventListener("scroll", fixNav);
+    </script>
 </body>
 
 </html>

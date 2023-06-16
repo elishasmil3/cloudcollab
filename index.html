@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/head.css">
     <link rel="stylesheet" href="./assets/css/sections.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
@@ -18,12 +19,11 @@
 <body>
     <div class="topNav wrap" id="default">
         <div class="topNavCon wrapCon">
-            <div class="topLeft">Join our Discord to create support ticket →</div>
+            <div class="topLeft"><a href="">Join our Discord to create support ticket →</a></div>
             <div class="topRight">
-                <li>Panel</li>
-                <li>Support</li>
-                <li>Blog</li>
-                <li>Pricings</li>
+                <li><a href="#contact">Support</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
             </div>
         </div>
     </div>
@@ -36,6 +36,7 @@
                     <li><a href="#default">Home</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="">Discord</a></li>
+                    <li><a href="./downloads.html">Downloads</a></li>
                     <li><a href="https://dash.cloudcollab.uk">Panel</a></li>
                 </div>
             </div>
@@ -43,11 +44,12 @@
         <div class="mobNav">
             <div class="mobNavHead">
                 <h1>CloudCollab</h1>
-                <divclass="hamburger" onClick="mobNavToggle()">
-                    <div class="hamLines"></div>
-                    <div class="hamLines"></div>
-                    <div class="hamLines"></div>
-                    </divclass=>
+
+                <div class="hamburger" onClick="mobNavToggle()">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
+                </div>
             </div>
             <div id="mobNavLinks" class="mobNavLinks">
                 <li><a href="#default">Home</a></li>
@@ -87,7 +89,8 @@
                 <img src="https://images-ext-2.discordapp.net/external/jefq50uUDPOHjD77oRV-bHOjLsAnJ1aj4XJy9G7x-tU/%3Fsize%3D1024/https/media.discordapp.net/stickers/1086648789043007499.webp?width=320&height=320"
                     alt="AMD" height="200px">
 
-                <img src="https://karen-pics.nyc3.digitaloceanspaces.com/135635102993612800/c652bc5a.png" alt="GoHostZ" height="150px">
+                <img src="https://karen-pics.nyc3.digitaloceanspaces.com/135635102993612800/c652bc5a.png" alt="GoHostZ"
+                    height="150px">
                 <img src="./assets/imgs/brands/aws.png" alt="AWS" height="110px">
                 <img src="./assets/imgs/brands/linode.png" alt="Linode" height="200px">
                 <!-- <img src="" alt="" height="200px"> -->
@@ -95,7 +98,6 @@
         </div>
     </div>
 
-    </div>
     <div class="section wrap aboutWrap">
         <div class="sectionCon wrapCon">
             <div class="sectionHead">
@@ -196,8 +198,42 @@
                             discount so I am happy about that.</span>
                         <h3>Neonsharp</h3>
                     </div>
-                    <img src="https://jarvismod.com/wp-content/uploads/trustpilot-feedback.png" alt="trustpilot" style="width: 50%;
+                </div>
+                <img src="https://jarvismod.com/wp-content/uploads/trustpilot-feedback.png" alt="trustpilot" style="width: 50%;
                 margin-top: 70px;" class="trustpilot">
+            </div>
+        </div>
+    </div>
+    <div class="section wrap faq">
+        <div class="sectionCon wrapCon">
+            <div class="sectionHead">
+                <h2>Questions?</h2>
+                <h1>FAQ(s)</h1>
+            </div>
+            <div class="sectionContent">
+                <div class="question">
+                    <span>
+                        <h1>How to get started?</h1>
+                        <p onclick="toggleAnswer(this)"><i class="fa-thin fa-plus"></i></p>
+                    </span>
+                    <hr>
+                    <h2>Just don't do anything</h2>
+                </div>
+                <div class="question">
+                    <span>
+                        <h1>How to get started?</h1>
+                        <p onclick="toggleAnswer(this)"><i class="fa-thin fa-plus"></i></p>
+                    </span>
+                    <hr>
+                    <h2>Just don't do anything</h2>
+                </div>
+                <div class="question">
+                    <span>
+                        <h1>How to get started?</h1>
+                        <p onclick="toggleAnswer(this)"><i class="fa-thin fa-plus"></i></p>
+                    </span>
+                    <hr>
+                    <h2>Just don't do anything</h2>
                 </div>
             </div>
         </div>
@@ -214,29 +250,78 @@
         </div>
     </div> -->
     <div class="footer">
-        <div class="footerLeft"></div>
-        <div class="footerRight"></div>
+        <div class="footerBanner">
+            <span>
+                <h1>Ready to Purchase</h1>
+                <h2>Let's get started</h2>
+            </span>
+            <span>
+                <button class="secondaryBtn">Purchase !</button>
+            </span>
+        </div>
+        <div class="footerContent">
+            <div class="footerSec">
+                <h1>CLOUDCOLLAB</h1>
+                <ul>
+                    <li>© 2023</li>
+                </ul>
+            </div>
+            <div class="footerSec">
+                <h1>Legal</h1>
+                <ul>
+                    <li>Privacy & Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+            <div class="footerSec">
+                <h1>Redirects</h1>
+                <ul>
+                    <li>Client Page</li>
+                    <li>Downloads</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footerSec footerFollow">
+                <h1>Follow us</h1>
+                <ul>
+                    <li><i class="fa-brands fa-reddit-alien"></i></li>
+                    <li><i class="fa-brands fa-discord"></i></li>
+                    <li><i class="fa-regular fa-rocket-launch"></i></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <script src="./assets/js/mobNav.js"></script>
-    <script>// Get the toggle button and the component to show/hide
-        const toggleButton = document.querySelector('.pricingMore');
-        const pricingInfoList = document.querySelector('.pricingInfoList');
-
-        // Add event listener to the toggle button
-        toggleButton.addEventListener('click', () => {
-            // Toggle the visibility of the component
-            pricingInfoList.style.display = pricingInfoList.style.display === 'none' ? 'flex' : 'none';
-        });
-    </script>
     <script>
         function fixNav() {
-            if (scrollY === 100) {
-                document.querySelector(".nav").style.display = "none";
+            if (scrollY >= 600) {
+                document.querySelector(".nav").classList.add("navScroll");
+                document.querySelector(".mobNav").classList.add("navScroll");
+            } else {
+                document.querySelector(".nav").classList.remove("navScroll");
+                document.querySelector(".mobNav").classList.remove("navScroll");
             }
         }
 
         // Call the fixNav function when the window is scrolled
-        window.addEventListener("scroll", fixNav);</script>
+        window.addEventListener("scroll", fixNav);
+    </script>
+    <script>
+        function toggleAnswer(element) {
+            const questionDiv = element.closest(".question");
+            const hr = questionDiv.querySelector("hr");
+            const h2 = questionDiv.querySelector("h2");
+
+            if (hr.style.display === "none") {
+                hr.style.display = "block";
+                h2.style.display = "block";
+            } else {
+                hr.style.display = "none";
+                h2.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

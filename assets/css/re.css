@@ -1,0 +1,13 @@
+.l1{
+    transform: rotate(135deg) translateX(16px);
+    height: 6px;
+}
+
+.l2{
+    display: none;
+}
+
+.l3{
+    transform: rotate(45deg) translateY(6px) translateX(-8px);
+    height: 6px;
+}

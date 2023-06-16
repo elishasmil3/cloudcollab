@@ -83,13 +83,24 @@
         transform: scale(0.8);
     }
 
-
     .sectionCon {
         transform: scale(0.9);
     }
 
     .sectionCon .sectionHead {
         transform: scale(0.8);
+    }
+
+    .footer {
+        padding: 20px!important;
+    }
+
+    .footerBanner {
+        display: none;
+    }
+
+    .footerContent{
+        padding: 10px;
     }
 
 }
@@ -111,8 +122,6 @@
         display: flex;
         /* display: none; */
     }
-
-
 
     .poweredBrands {
         gap: 50px;
@@ -136,10 +145,15 @@
     }
 
     .trustpilot {
-        width: 100%!important;
+        width: 100% !important;
         margin-top: 100px;
     }
+
     /* .contactForm{
         width: 900px;
     } */
+
+    .footerContent{
+        flex-direction: column;
+    }
 }

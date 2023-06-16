@@ -1,0 +1,90 @@
+.footer {
+    background: var(--tertiary-color);
+    color: white;
+    padding: 40px;
+    transition: 0s;
+    padding-top: 60px;
+}
+
+.footerBanner {
+    transform: translateY(-125px);
+    background: var(--secondary-color);
+    /* border: 5px solid var(--tertiary-color); */
+    position: absolute;
+    width: calc(100% - 140px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -8px -8px 0px 3px rgba(196,196,196,0.75);
+    -webkit-box-shadow: -8px -8px 0px 3px rgba(196,196,196,0.75);
+    -moz-box-shadow: -8px -8px 0px 3px rgba(196,196,196,0.75);
+}
+
+.footerBanner h1 {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: var(--secondary-font);
+}
+
+.footerBanner h2 {
+    color: var(--light-color);
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+
+.footerBanner button {
+    font-family: var(--tertiary-font);
+    font-size: 20px;
+    padding: 10px 20px;
+    color: var(--light-color);
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:self-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.foooterSec {
+    min-width: 145px;
+}
+
+.footerSec h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footerSec ul {
+    font-size: 15px;
+}
+
+.footerSec ul li {
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.footerFollow ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footerFollow ul li {
+    padding: 8px;
+    background: var(--secondary-color);
+    border-radius: 100%;
+    min-width: 20px;
+    text-align: center;
+    margin: auto;
+    border: 2px solid var(--secondary-color);
+}
+
+.footerFollow ul li:hover {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+}
